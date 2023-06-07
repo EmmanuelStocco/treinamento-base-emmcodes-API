@@ -22,5 +22,5 @@ AppDataSource.initialize().then(() => {
     app.use(routes)
     app.use(errorMiddleware)
 
-    return app.listen(process.env.PORT ?? 3000)
+    return app.listen(process.env.PORT ?? 3001)
 })

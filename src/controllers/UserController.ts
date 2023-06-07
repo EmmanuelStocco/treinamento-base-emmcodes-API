@@ -83,5 +83,10 @@ export class UserController {
         return res.json(req.user)
     }
 
+    async all(req: Request, res: Response) {
+        const allUsers = await userRepository.find()
+        console.log('allUsers', allUsers)
+        return res.status(200).json(allUsers)
+    }
 }
 
